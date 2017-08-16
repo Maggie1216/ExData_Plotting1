@@ -8,7 +8,7 @@ d2<-mydata[,'Time']
 alldt<-paste(d1,d2)
 newdt<-strptime(alldt,'%d/%m/%Y %H:%M:%S')
 Sys.setlocale("LC_ALL", "English")
-par(mfrow=c(2,2),cex.lab=0.7,cex.axis=0.7,mar=c(2,4,2,2))
+par(mfrow=c(2,2),cex.lab=0.7,cex.axis=0.7,mar=c(4,4,2,2))
 #plot no.1:Global Active Power
 plot(newdt,mydata[,'Global_active_power'],pch='.',ylab='Global Active Power',xlab = '')
 lines(newdt,mydata[,'Global_active_power'])
